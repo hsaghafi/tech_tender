@@ -3,6 +3,7 @@ import { usdt_abi, usdt_contractAddress } from "./constants.js"
 
 const connectButton = document.getElementById("connectButton")
 const USDT_mintButton = document.getElementById("USDT_mintButton")
+
 connectButton.onclick = connect
 USDT_mintButton.onclick = USDT_mint
 
