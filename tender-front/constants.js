@@ -1,7 +1,3 @@
-// sepolia network
-// export const contractAddress = "0x690205F2CC55B35955395892DC9e2892FC8Be608"
-// export const usdt_contractAddress = "0xd7153CCe4C931775B57AC241deA3b8af4eCF3c03"
-
 // hardhat network
 export const contractAddress = "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512"
 export const usdt_contractAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3"
