@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* #gradient_back {
+            height: 100%;
+            background-image: rgb(0,255,0);
+            background-image: linear-gradient(0deg, rgba(0,255,0,0) 0%, rgba(0,253,0,1) 100%); 
+        } */
+        #gradient_back {
+            height: 100%;
+            background-image: rgb(0, 150, 0);
+            background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,150,0,1) 100%); 
+        }
+   </style>
+<div id="gradient_back">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender Manager</title>
+</head>
+<body>
+    <div align="right"><button id="connectButton" style="height:35px;width:150px;">Connect Wallet</button></div>
+    <h1 align="center"><font color="yellow">Tender</font></h1>
+    <center>
+        <br><br>
+        <h3>Current Stage</h3>
+        <label id="stageLabel">...</label>
+        <br>
+        <button id="RefreshStageButton" style="width:100px"> Refresh </button>
+        <br><br><hr><br>
+        <h3>Send Proposal Hash</h3>
+        <label for="prop_hash">Hashed proposal:</label>
+        <input id="prop_hash" size="65"/>
+        <br><br>
+        <button id="send_prop_hash_Button" style="width:100px"> Send </button>
+        <br><br><hr><br>
+        <h3>Send Proposal</h3>
+        <label for="prop_reveal">Revealed proposal:</label>
+        <input id="prop_reveal" size="65"/>
+        <br><br>
+        <button id="send_prop_reveal_Button" style="width:100px"> Send </button>
+        <br><br><hr><br>
+        <h3>Send Price Hash</h3>
+        <label for="price_hash">Hashed price:</label>
+        <input id="price_hash" size="65"/>
+        <br>
+        <label id="price_max"></label>
+        <br><br>
+        <button id="send_price_hash_Button" style="width:100px"> Send </button>
+        <br><br><hr><br>
+        <h3>Send Price</h3>
+        <label for="price_reveal">Price:</label>
+        <input id="price_reveal"/>
+        <br>
+        <label for="price_salt">Salt:</label>
+        <input id="price_salt"/>
+        <br><br>
+        <button id="send_price_reveal_Button" style="width:100px"> Send </button>
+        <br><br><hr><br>
+        <h3>Check for Proposal Approve</h3>
+        <button id="approve_check_Button" style="width:100px"> Check </button>
+        <br><br><hr><br>
+        <h3>Withdraw</h3>
+        <button id="withdrawButton">Withdraw the collateral and exit from tender</button>
+        <br><br><hr><br>
+        <h3>The Winner!</h3>
+        <button id="getWinnerButton">Get The Winner</button>
+        <br><br>
+        <h6>by H.Saghafi</h6>
+    </center>
+</body>
+</div>
+<script src="./participant.js" type="module"></script>
+</html>

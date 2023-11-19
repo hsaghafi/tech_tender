@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* #gradient_back {
+            height: 100%;
+            background-image: rgb(0,255,0);
+            background-image: linear-gradient(0deg, rgba(0,255,0,0) 0%, rgba(0,253,0,1) 100%); 
+        } */
+        #gradient_back {
+            height: 100%;
+            background-image: rgb(150, 0, 50);
+            background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(150,0,50,1) 100%); 
+        }
+   </style>
+<div id="gradient_back">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender Manager</title>
+</head>
+<body>
+    <div align="right"><button id="connectButton" style="height:35px;width:150px;">Connect Wallet</button></div>
+    <h1 align="center"><font color="yellow">Tender Admin</font></h1>
+    <center>
+        <br><br>
+        <h3>Current Stage</h3>
+        <label id="stageLabel">...</label>
+        <br>
+        <button id="RefreshStageButton" style="width:100px"> Refresh </button>
+        <br><br><hr><br>
+        <h3>New Tender</h3>
+        <label for="prop_h_st">Sending hashed proposal start time:</label>
+        <input id="prop_h_st" type="number"/>
+        <br>
+        <label for="prop_h_end">Sending hashed proposal end time:</label>
+        <input id="prop_h_end" type="number"/>
+        <br><br>
+        <label for="prop_r_st">Sending revealed proposal start time:</label>
+        <input id="prop_r_st" type="number"/>
+        <br>
+        <label for="prop_r_end">Sending revealed proposal end time:</label>
+        <input id="prop_r_end" type="number"/>
+        <br><br>
+        <label for="price_h_st">Sending hashed price start time:</label>
+        <input id="price_h_st" type="number"/>
+        <br>
+        <label for="price_h_end">Sending hashed price end time:</label>
+        <input id="price_h_end" type="number"/>
+        <br><br>
+        <label for="price_r_st">Sending revealed price start time:</label>
+        <input id="price_r_st" type="number"/>
+        <br>
+        <label for="price_r_end">Sending revealed price end time:</label>
+        <input id="price_r_end" type="number"/>
+        <br><br>
+        <label for="wit_st">Withdraw start time:</label>
+        <input id="wit_st" type="number"/>
+        <br>
+        <label for="wit_end">Withdraw end time:</label>
+        <input id="wit_end" type="number"/>
+        <br><br>
+        <label for="collat">Collateral Amount (USDT):</label>
+        <input id="collat" type="number"/>
+        <br>
+        <label for="max_price">Maximum Acceptable Price (USDT):</label>
+        <input id="max_price" type="number"/>
+        <br><br>
+        <button id="setButton" style="width:100px"> Set </button>
+        <br><br>
+        <button id="autoButton" style="width:100px"> Auto Fill! </button>
+        <br><br><hr><br>
+        <h3>Proposal Review</h3>
+        <button id="getParticipantsButton">Get Participants</button>
+        <br>
+        <textarea id="ParticipantsList" name="ParticipantsList" placeholder="Participants List" 
+            rows="6" cols="60" readonly>
+        </textarea>    
+        <br><br>
+        <label for="ParticipantAddress">Participant Address:</label>
+        <input id="ParticipantAddress" placeholder="0x0" size="40"/>
+        <button id="get_proposalButton">Get Proposal</button>
+        <br>
+        <textarea id="ProposalContent" name="ProposalContent" placeholder="Proposal Content" 
+            rows="3" cols="60" readonly>
+        </textarea>
+        <br>  
+        <button id="approveButton">Approve Proposal</button>
+        <button id="rejectButton">Reject Proposal</button>
+        <br><br><hr><br>
+        <h3>Reset Tender</h3>
+        <label for="ReceiverAddress">Balance receiver address :</label>
+        <input id="ReceiverAddress" placeholder="0x0" size="40"/>
+        <button id="ResetTenderButton">Reset Current Tender</button>
+        <br><br><hr><br>
+        <h3>Forced Reset Tender</h3>
+        <button id="ApproveForcedResetButton">Approve Forced Reset</button>
+        <br><br>
+        <button id="CancelForcedResetButton">Cancel Forced Reset</button>
+        <br><br>
+        <button id="ForcedResetButton">Forced Reset</button>
+        <br><br><hr><br>
+        <h3>The Winner!</h3>
+        <button id="getWinnerButton">Get The Winner</button>
+        <br><br>
+        <h6>by H.Saghafi</h6>
+        </center>
+</body>
+</div>
+<script src="./admin.js" type="module"></script>
+</html>
