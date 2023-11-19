@@ -270,9 +270,7 @@ async function connect() {
     return new Promise((resolve, reject) => {
         try {
             provider.once(transactionResponse.hash, (transactionReceipt) => {
-                console.log(
-                    `Completed with ${transactionReceipt.confirmations} confirmations. `
-                )
+                console.log(`Completed with ${transactionReceipt.confirmations} confirmations.')
                 resolve()
             })
         } catch (error) {
